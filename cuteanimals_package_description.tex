@@ -2,6 +2,7 @@
 \usepackage[utf8]{inputenc}
 \usepackage[a4paper, left=2.5cm, right=2.5cm, top=2.5cm, bottom=2.5cm]{geometry}
 \usepackage{cuteanimals}
+\usepackage{tcolorbox}
 \setlength{\parindent}{0pt}
 
 \begin{document}
@@ -10,18 +11,27 @@
 \author{Marie-Luise Popp}
 \date{\today}
 
-
-
 \maketitle
 
-This package provides a number of icons of cute animals. The icons can be used in an itemize-environment, as well: 
+This package provides a number of icons of cute animals that can be used similarly to icons provided by other packages like \verb+pifont+ or \verb+amssymb+. 
 
+The icons can be used in an itemize-environment, such that the following code:
+
+ \begin{tcolorbox}
 \begin{verbatim}\begin{itemize}
-\item[\Icon]  
+\item[\Imke] All cats are beautiful. 
+\item[\CCatt] All cats are purrfect.
 \end{itemize}
 \end{verbatim} 
+\end{tcolorbox} creates the following output:
 
-Exhaustive list of animal symbols in this package:
+\begin{itemize}
+\item[\Imke] All cats are beautiful. 
+\item[\CCatt] All cats are purrfect.
+
+\end{itemize}
+
+The following table presents the codes for all animal icons provided by this package:
 
 \begin{tabular}{lclclclc}
    \verb+\Imke+ & \Imke & \verb+\CCatt+ & \CCatt & \verb+\CCattt+& \CCattt & \verb+\Chick+& \Chick  \\
@@ -31,15 +41,16 @@ Exhaustive list of animal symbols in this package:
 \verb+\Koala+& \Koala& \verb+\Lamb+& \Lamb& \verb+\Lion+& \Lion& \verb+\Monkey+& \Monkey \\
 \verb+\Owl+& \Owl& \verb+\Panda+& \Panda& \verb+\Peacock+& \Peacock& \verb+\Pfeacock+& \Pfeacock \\
 \verb+\Penguin+& \Penguin& \verb+\Piglet+& \Piglet& \verb+\Rooster+ & \Rooster& \verb+\Daniel+ & \Daniel \\
-\verb+\Squirrel+& \Squirrel& \verb+\Turtle+& \Turtle & \verb+\Unicorn+& \Unicorn && \\
-
-
+\verb+\Squirrel+& \Squirrel& \verb+\Turtle+& \Turtle & &  & & \\
 \end{tabular}
 
 
-
-
-
-
-
 \end{document}
+
+
+
+
+
+
+
+
